@@ -15,8 +15,9 @@ import UIKit
 
 enum NavigationAppearances :String {
     
-    case LOGINVIEWCONTROLLER = "Login", IMAGESVIEWCONTROLLER = "Images"
-    
+    case LOGINVIEWCONTROLLER = "Login",
+    IMAGESVIEWCONTROLLER = "Images",
+    AUDIOVIEWCONTROLLER = "Audio"
 }
 
 class BaseNavigationView: UINavigationController {
@@ -40,12 +41,19 @@ class BaseNavigationView: UINavigationController {
             baseNavigationBar.buttonLeft.title  = ""
             baseNavigationBar.buttonRight.title = "Add"
             
-        } else {
+        } else if type == .IMAGESVIEWCONTROLLER {
             
             baseNavigationBar.baseNavigationItem.title = type.rawValue
             baseNavigationBar.buttonLeft.title = "BACK"
             baseNavigationBar.buttonRight.title = "Multiply"
         }
+        else {
+            baseNavigationBar.baseNavigationItem.title = type.rawValue
+            baseNavigationBar.buttonLeft.title = "<"
+            baseNavigationBar.buttonRight.title = ">"
+        }
+        
+        
     }
     
     func hideRightButton() {

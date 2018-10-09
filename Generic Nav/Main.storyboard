@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Generic_Navigation__Bar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Generic_Nav" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,11 +41,24 @@
         <!--Second View Controller-->
         <scene sceneID="L1p-8t-gdo">
             <objects>
-                <viewController id="inO-pB-pC5" customClass="SecondViewController" customModule="Generic_Navigation__Bar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="inO-pB-pC5" customClass="SecondViewController" customModule="Generic_Nav" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7SI-r2-Tcy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFe-mq-Jvh">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="rst-f7-4Ld" kind="show" id="1vW-Rg-5Xy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uFe-mq-Jvh" firstAttribute="centerX" secondItem="7SI-r2-Tcy" secondAttribute="centerX" id="Drg-3e-Bv0"/>
+                            <constraint firstItem="uFe-mq-Jvh" firstAttribute="centerY" secondItem="7SI-r2-Tcy" secondAttribute="centerY" id="kD8-PL-GF5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1F9-D6-Oja"/>
                     </view>
                 </viewController>
@@ -53,10 +66,25 @@
             </objects>
             <point key="canvasLocation" x="754" y="143"/>
         </scene>
+        <!--Third View Controller-->
+        <scene sceneID="FD0-Vi-KCA">
+            <objects>
+                <viewController id="rst-f7-4Ld" customClass="ThirdViewController" customModule="Generic_Nav" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ThV-uH-6Pi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DQJ-dL-Jvq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQH-V6-xPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="143"/>
+        </scene>
         <!--Base Navigation View-->
         <scene sceneID="mhb-CO-75E">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wba-xF-z7v" customClass="BaseNavigationView" customModule="Generic_Navigation__Bar" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wba-xF-z7v" customClass="BaseNavigationView" customModule="Generic_Nav" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yVJ-bS-62b">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
