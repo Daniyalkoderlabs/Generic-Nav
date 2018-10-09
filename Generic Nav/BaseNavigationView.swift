@@ -30,25 +30,26 @@ class BaseNavigationView: UINavigationController {
         baseNavigationBar = Bundle.main.loadNibNamed("BaseNavigationBar", owner:nil, options: nil)?.first as? BaseNavigationBar
         baseNavigationBar.frame = self.navigationBar.frame
         baseNavigationBar.customDelegate = self
+        baseNavigationBar.backIndicatorImage = UIImage.init(named: "random")
         self.navigationBar.addSubview(baseNavigationBar)
         // Do any additional setup after loading the view.
     }
     
     func updateLeftBarImage(imageName:String) {
         
-        baseNavigationBar.buttonLeft.image = UIImage.init(named: imageName)
-        
+        baseNavigationBar.updateLeftImage(imageName: imageName)
+     
     }
     
     func updateNavigation(type: NavigationAppearances)  {
         if type == .LOGINVIEWCONTROLLER {
-            
+            baseNavigationBar.hideLeftImage()
             baseNavigationBar.baseNavigationItem.title = type.rawValue
             baseNavigationBar.buttonLeft.title  = ""
             baseNavigationBar.buttonRight.title = "Add"
             
         } else if type == .IMAGESVIEWCONTROLLER {
-            
+             baseNavigationBar.hideLeftImage()
             baseNavigationBar.baseNavigationItem.title = type.rawValue
             baseNavigationBar.buttonLeft.title = "BACK"
             baseNavigationBar.buttonRight.title = "Multiply"
@@ -87,7 +88,7 @@ extension BaseNavigationView: BaseNavigationBarDelegate {
         self.customDelegate?.didTappedRight()
     }
     
-    func didTappedLeft() {
+    @objc func didTappedLeft() {
         self.popViewController(animated: true)
         self.customDelegate?.didTappedLeft()
     }

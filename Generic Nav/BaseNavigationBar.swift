@@ -37,4 +37,16 @@ class BaseNavigationBar: UINavigationBar {
         self.customDelegate?.didTappedRight()
         
     }
+    
+    func updateLeftImage(imageName:String) {
+        
+        buttonLeft.image = UIImage.init(named: imageName)
+        
+    }
+    
+    func hideLeftImage() {
+        
+        buttonLeft.image = nil
+        
+    }
 }
