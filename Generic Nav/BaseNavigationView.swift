@@ -34,6 +34,12 @@ class BaseNavigationView: UINavigationController {
         // Do any additional setup after loading the view.
     }
     
+    func updateLeftBarImage(imageName:String) {
+        
+        baseNavigationBar.buttonLeft.image = UIImage.init(named: imageName)
+        
+    }
+    
     func updateNavigation(type: NavigationAppearances)  {
         if type == .LOGINVIEWCONTROLLER {
             

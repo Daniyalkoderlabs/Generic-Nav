@@ -20,6 +20,7 @@ class ThirdViewController: UIViewController {
         super.viewWillAppear(animated)
         if let baseNav = self.navigationController as? BaseNavigationView {
             baseNav.updateNavigation(type: .AUDIOVIEWCONTROLLER)
+            baseNav.updateLeftBarImage(imageName: "random.jpeg")
         }
         
     }
