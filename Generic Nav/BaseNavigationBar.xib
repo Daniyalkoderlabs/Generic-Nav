@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14306.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14278.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaseNavigationBar" customModule="Generic_Navigation__Bar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAM-IC-a3M" customClass="BaseNavigationBar" customModule="Generic_Navigation__Bar" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="392" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="bYk-sG-yuN">
+                            <barButtonItem key="leftBarButtonItem" title="Item" id="Qj8-oE-KqP">
+                                <connections>
+                                    <action selector="didTappedLeft:" destination="iN0-l3-epB" id="hWU-BI-HbN"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Item" id="qnW-ug-YHP">
+                                <connections>
+                                    <action selector="didTappedRight:" destination="iN0-l3-epB" id="0pe-me-Sok"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="IAM-IC-a3M" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DDZ-Wr-IhB"/>
+                <constraint firstItem="IAM-IC-a3M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XOe-5j-wMs"/>
+                <constraint firstItem="IAM-IC-a3M" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="msd-mK-Zy1"/>
+                <constraint firstItem="IAM-IC-a3M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yFn-j0-Rfb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="baseNavigationItem" destination="bYk-sG-yuN" id="WKg-F1-QuD"/>
+                <outlet property="buttonLeft" destination="Qj8-oE-KqP" id="Xx9-wf-1Ye"/>
+                <outlet property="buttonRight" destination="qnW-ug-YHP" id="TlU-B4-Q8A"/>
+            </connections>
+            <point key="canvasLocation" x="-332" y="-245"/>
+        </view>
+    </objects>
+</document>
