@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EAA7DC4216CA8DB00614B85 /* BaseNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA7DC3216CA8DB00614B85 /* BaseNavigationView.swift */; };
+		2EAA7DC6216CA92100614B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA7DC5216CA92100614B85 /* ViewController.swift */; };
 		2EB17064216CA5E100AA7C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB17063216CA5E100AA7C6E /* AppDelegate.swift */; };
 		2EB1706B216CA5E300AA7C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1706A216CA5E300AA7C6E /* Assets.xcassets */; };
 		2EB1706E216CA5E300AA7C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1706C216CA5E300AA7C6E /* LaunchScreen.storyboard */; };
-		2EB17076216CA5F700AA7C6E /* BaseNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB17075216CA5F700AA7C6E /* BaseNavigationView.swift */; };
-		2EB1707B216CA60400AA7C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB17077216CA60400AA7C6E /* ViewController.swift */; };
 		2EB1707C216CA60400AA7C6E /* BaseNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB17078216CA60400AA7C6E /* BaseNavigationBar.xib */; };
 		2EB1707D216CA60400AA7C6E /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB17079216CA60400AA7C6E /* BaseNavigationBar.swift */; };
 		2EB1707E216CA60400AA7C6E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1707A216CA60400AA7C6E /* SecondViewController.swift */; };
@@ -19,13 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EAA7DC3216CA8DB00614B85 /* BaseNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationView.swift; sourceTree = "<group>"; };
+		2EAA7DC5216CA92100614B85 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2EB17060216CA5E100AA7C6E /* Generic Nav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generic Nav.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB17063216CA5E100AA7C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EB1706A216CA5E300AA7C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EB1706D216CA5E300AA7C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EB1706F216CA5E300AA7C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EB17075216CA5F700AA7C6E /* BaseNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationView.swift; path = "../../Generic Navigation\U0010 Bar/Generic Navigation\U0010 Bar/BaseNavigationView.swift"; sourceTree = "<group>"; };
-		2EB17077216CA60400AA7C6E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Generic Navigation\U0010 Bar/Generic Navigation\U0010 Bar/ViewController.swift"; sourceTree = "<group>"; };
 		2EB17078216CA60400AA7C6E /* BaseNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseNavigationBar.xib; sourceTree = "<group>"; };
 		2EB17079216CA60400AA7C6E /* BaseNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
 		2EB1707A216CA60400AA7C6E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -62,12 +62,12 @@
 		2EB17062216CA5E100AA7C6E /* Generic Nav */ = {
 			isa = PBXGroup;
 			children = (
+				2EAA7DC5216CA92100614B85 /* ViewController.swift */,
 				2EB1707F216CA61400AA7C6E /* Main.storyboard */,
 				2EB17079216CA60400AA7C6E /* BaseNavigationBar.swift */,
 				2EB17078216CA60400AA7C6E /* BaseNavigationBar.xib */,
 				2EB1707A216CA60400AA7C6E /* SecondViewController.swift */,
-				2EB17077216CA60400AA7C6E /* ViewController.swift */,
-				2EB17075216CA5F700AA7C6E /* BaseNavigationView.swift */,
+				2EAA7DC3216CA8DB00614B85 /* BaseNavigationView.swift */,
 				2EB17063216CA5E100AA7C6E /* AppDelegate.swift */,
 				2EB1706A216CA5E300AA7C6E /* Assets.xcassets */,
 				2EB1706C216CA5E300AA7C6E /* LaunchScreen.storyboard */,
@@ -149,8 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EB1707E216CA60400AA7C6E /* SecondViewController.swift in Sources */,
-				2EB17076216CA5F700AA7C6E /* BaseNavigationView.swift in Sources */,
-				2EB1707B216CA60400AA7C6E /* ViewController.swift in Sources */,
+				2EAA7DC4216CA8DB00614B85 /* BaseNavigationView.swift in Sources */,
+				2EAA7DC6216CA92100614B85 /* ViewController.swift in Sources */,
 				2EB1707D216CA60400AA7C6E /* BaseNavigationBar.swift in Sources */,
 				2EB17064216CA5E100AA7C6E /* AppDelegate.swift in Sources */,
 			);
